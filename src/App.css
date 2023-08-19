@@ -1,11 +1,4 @@
 /* Default CSS */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -13,6 +6,9 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-weight: 400;
   overflow-x: hidden;
   background-color: #121212 !important;
@@ -21,7 +17,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -350,7 +345,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  margin-bottom: 24px;
+  margin-bottom: 10px !important;
 }
 
 .project p {
@@ -365,9 +360,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project .nav.nav-pills {
   width: 72%;
-  margin: 0 auto;
+  margin: 25px auto;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255 / 10%);
+  background-color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
 
@@ -428,7 +423,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30%;
   overflow: hidden;
-  width: 400px;
+  width: 600px;
   height: 400px;
   margin-bottom: 24px;
 }
@@ -474,15 +469,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
-}
-
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
 }
 
 /* Contact Form */

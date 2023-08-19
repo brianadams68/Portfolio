@@ -44,9 +44,6 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
-            <img src="" alt="Contact Us" />
-          </Col>
-          <Col md={6}>
             <h2>Get In Touch</h2>
             <form onSubmit={handleSubmit} className="contact-form">
               <Row>

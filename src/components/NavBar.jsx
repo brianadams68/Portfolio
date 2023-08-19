@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import git_icon from "../assets/images/git-icon.png";
 import linkedl_icon from "../assets/images/linkedl-icon.png";
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -58,11 +58,11 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+                activeLink === "project" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("projects")}
+              onClick={() => onUpdateActiveLink("project")}
             >
               Projects
             </Nav.Link>
