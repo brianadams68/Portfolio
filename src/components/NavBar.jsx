@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import git_icon from "../assets/images/git-icon.png";
 import linkedl_icon from "../assets/images/linkedl-icon.png";
+import logo from "../assets/images/logo.png"
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -31,7 +32,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <span>Brian Adams</span>
+          <img className="logo-img" src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -63,7 +64,6 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              {" "}
               Projects
             </Nav.Link>
           </Nav>
