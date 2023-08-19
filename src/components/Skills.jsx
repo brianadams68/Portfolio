@@ -1,6 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import htmlIcon from "../assets/images/html-icon.png";
+import cssIcon from "../assets/images/css-icon.png";
+import reactIcon from "../assets/images/react-icon.png";
+import mongoIcon from "../assets/images/mongodb-icon.png";
+import jsIcon from "../assets/images/javascript-icon.png";
 
 export const Skills = () => {
   const responsive = {
@@ -25,39 +30,51 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-    <Container>
+      <Container>
         <Row>
-            <Col>
+          <Col>
             <div className="skill-box">
-                <h2>
-                    Skills
-                </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, temporibus adipisci. Delectus assumenda quas, tempore a maxime unde? Tempore id nesciunt repellendus in mollitia vitae rerum corrupti sed, placeat dolore?</p>
-                <Carousel responsive={responsive}  infinite={true} className="skill-slider">
-                    <div className="item">
-                        <h5>HTML</h5>
-                    </div>
-                    <div className="item">
-                        <h5>CSS</h5>
-                    </div>
-                    <div className="item">
-                        <h5>Javascript</h5>
-                    </div>
-                    <div className="item">
-                        <h5>React</h5>
-                    </div>
-                    <div className="item">
-                        <h5>MongoDB</h5>
-                    </div>
-                    <div className="item">
-                        <h5>Express.JS</h5>
-                    </div>
-                </Carousel>
+              <h2>Skills</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maxime, temporibus adipisci. Delectus assumenda quas, tempore a
+                maxime unde? Tempore id nesciunt repellendus in mollitia vitae
+                rerum corrupti sed, placeat dolore?
+              </p>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="skill-slider"
+              >
+                <div className="item">
+                  <h5>HTML</h5>
+                  <img src={htmlIcon} alt="" />
+                </div>
+                <div className="item">
+                  <h5>CSS</h5>
+                  <img src={cssIcon} alt="" />
+                </div>
+                <div className="item">
+                  <h5>Javascript</h5>
+                  <img src={jsIcon} alt="" />
+                </div>
+                <div className="item">
+                  <h5>React</h5>
+                  <img src={reactIcon} alt="" />
+                </div>
+                <div className="item">
+                  <h5>MongoDB</h5>
+                  <img src={mongoIcon} alt="" />
+                </div>
+                <div className="item">
+                  <h5>Express.JS</h5>
+                </div>
+              </Carousel>
             </div>
-            </Col>
+          </Col>
         </Row>
-    </Container>
-    <img className="background-image-left" src="" alt="" />
+      </Container>
+      <img className="background-image-left" src="" alt="" />
     </section>
-  )
+  );
 };

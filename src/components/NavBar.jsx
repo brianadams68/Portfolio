@@ -35,7 +35,7 @@ export const NavBar = () => {
           <img className="logo-img" src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link
               href="#home"
               className={

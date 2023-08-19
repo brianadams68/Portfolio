@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/images/headerImg.jpeg";
+import headerImg from "../assets/images/headerImg.png";
+import headerImg2 from "../assets/images/headerImg2.jpeg";
+import headerImg3 from "../assets/images/headerImg3.jpeg";
+import headerImg4 from "../assets/images/headerImg4.JPG";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -46,7 +49,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7} className="text-column">
+          <Col xs={12} md={6} xl={5} className="text-column">
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {`Hi, I'm Brian `} <span className="wrap">{text}</span>{" "}
@@ -60,8 +63,11 @@ export const Banner = () => {
               integration.
             </p>
           </Col>
-          <Col xs={12} md={6} xl={5} >
-            <img src={headerImg} alt="Header Img" />
+          <Col xs={12} md={6} xl={5} className="gallery">
+            <img src={headerImg} alt="" />
+            <img src={headerImg2} alt="" />
+            <img src={headerImg3} alt="" />
+            <img src={headerImg4} alt="" />
           </Col>
         </Row>
       </Container>
