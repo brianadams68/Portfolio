@@ -30,13 +30,10 @@ export const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container>
+      <Container className="nav-container">
         <Navbar.Brand href="#home">
           <img className="logo-img" src={logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
@@ -67,7 +64,7 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
           </Nav>
-          <span className="navbar-text">
+          <span className="navbar-text right-content">
             <div className="social-icon">
               <a href="https://github.com/brianadams68">
                 <img src={git_icon} alt="Git icon" />

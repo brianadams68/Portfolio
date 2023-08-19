@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/images/headerImg.jpeg";
 
 export const Banner = () => {
@@ -47,7 +46,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} className="text-column">
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {`Hi, I'm Brian `} <span className="wrap">{text}</span>{" "}
@@ -60,10 +59,6 @@ export const Banner = () => {
               Node.js, Express.js, MongoDB, Mongoose, Git, GitHub, and REST API
               integration.
             </p>
-            <button onClick={() => console.log("connect")}>
-              Let's connect
-              <ArrowRightCircle size={25} />
-            </button>
           </Col>
           <Col xs={12} md={6} xl={5} >
             <img src={headerImg} alt="Header Img" />
