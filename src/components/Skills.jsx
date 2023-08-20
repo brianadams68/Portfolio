@@ -66,9 +66,6 @@ export const Skills = () => {
                   <h5>MongoDB</h5>
                   <img src={mongoIcon} alt="" />
                 </div>
-                <div className="item">
-                  <h5>Express.JS</h5>
-                </div>
               </Carousel>
             </div>
           </Col>

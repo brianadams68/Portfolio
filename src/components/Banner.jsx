@@ -54,6 +54,8 @@ export const Banner = () => {
             <h1>
               {`Hi, I'm Brian `} <span className="wrap">{text}</span>{" "}
             </h1>
+          </Col>
+          <Row id="banner-flex">
             <p>
               I am a passionate web development lover with a background in
               logistics and human resources. I bring strong communication,
@@ -62,13 +64,13 @@ export const Banner = () => {
               Node.js, Express.js, MongoDB, Mongoose, Git, GitHub, and REST API
               integration.
             </p>
-          </Col>
-          <Col xs={12} md={6} xl={5} className="gallery">
-            <img src={headerImg} alt="" />
-            <img src={headerImg2} alt="" />
-            <img src={headerImg3} alt="" />
-            <img src={headerImg4} alt="" />
-          </Col>
+            <Col xs={12} md={6} xl={5} className="gallery">
+              <img src={headerImg} alt="" />
+              <img src={headerImg2} alt="" />
+              <img src={headerImg3} alt="" />
+              <img src={headerImg4} alt="" />
+            </Col>
+          </Row>
         </Row>
       </Container>
     </section>

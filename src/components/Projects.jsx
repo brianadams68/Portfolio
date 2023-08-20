@@ -37,33 +37,38 @@ export const Projects = () => {
               odit, dicta rem assumenda neque at.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Second</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => 
-                        <ProjectsCard key={index} {...project} />
-                      )
-                  }
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
-              </Tab.Content>
+              <Row>
+                <Col sm={3}>
+                  <Nav
+                    variant="pills"
+                    className="nav-pills mb-5 d-flex justify-content-center"
+                    id="pills-tab"
+                  >
+                    <Nav.Item>
+                      <Nav.Link eventKey="first">Tab One</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second">Tab Second</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                </Col>
+                <Col sm={5}>
+                  <Tab.Content className="pills-projects">
+                    <Tab.Pane eventKey="first">
+                      <Row>
+                        {projects.map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second"></Tab.Pane>
+                    <Tab.Pane eventKey="third"></Tab.Pane>
+                  </Tab.Content>
+                </Col>
+              </Row>
             </Tab.Container>
           </Col>
         </Row>
