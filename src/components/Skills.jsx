@@ -36,10 +36,12 @@ export const Skills = () => {
             <div className="skill-box">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, temporibus adipisci. Delectus assumenda quas, tempore a
-                maxime unde? Tempore id nesciunt repellendus in mollitia vitae
-                rerum corrupti sed, placeat dolore?
+                These are some of the skills I learned in programming that have
+                not only enhanced my technical abilities but also enriched my
+                overall approach to problem-solving and innovation. These skills
+                serve as the building blocks of my programming journey, enabling
+                me to create efficient and effective solutions while continually
+                expanding my knowledge and expertise.
               </p>
               <Carousel
                 responsive={responsive}

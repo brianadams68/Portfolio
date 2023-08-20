@@ -308,6 +308,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
+  padding: 0 20px;
   margin: 14px 0 75px 0;
 }
 
@@ -564,17 +565,5 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-/* Responsive for Phones */
-@media (max-width: 767px) {
-
-  nav.navbar {
-    width: 100%;
-  }
-  
-  nav.navbar button {
-    display: none;
   }
 }

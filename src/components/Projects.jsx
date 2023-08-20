@@ -31,10 +31,12 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consectetur sint nemo, architecto inventore perferendis minus
-              eveniet sequi accusamus molestias fugiat non quo amet repellendus
-              odit, dicta rem assumenda neque at.
+              These projects encapsulate my course journey, showcasing my
+              evolving skills and problem-solving prowess. They stand as proof
+              of my ability to translate knowledge into tangible creations and
+              highlight my growth as a programmer. As I move forward, these
+              projects will serve as a foundation for my future endeavors in the
+              dynamic realm of technology.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Row>
