@@ -4,6 +4,7 @@ import headerImg from "../assets/images/headerImg.png";
 import headerImg2 from "../assets/images/headerImg2.jpeg";
 import headerImg3 from "../assets/images/headerImg3.jpeg";
 import headerImg4 from "../assets/images/headerImg4.JPG";
+import "animate.css";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
