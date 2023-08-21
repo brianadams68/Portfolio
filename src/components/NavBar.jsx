@@ -73,9 +73,11 @@ export const NavBar = () => {
                 <img src={linkedl_icon} alt="Linkedln icon" />
               </a>
             </div>
+            <a href="#connect">
             <button className="vvd" onClick={() => console.log("connect")}>
               <span>Let's Connect</span>
             </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>
