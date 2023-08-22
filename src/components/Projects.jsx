@@ -11,16 +11,19 @@ export const Projects = () => {
       title: "The Savior",
       description: "Design & Development",
       imgUrl: projImg1,
+      link: "https://brianadams68.github.io/The-Saviors/",
     },
     {
       title: "Trackify",
       description: "Design & Development",
       imgUrl: projImg2,
+      link: "https://habit-tracker.adaptable.app/",
     },
     {
       title: "SportSoul",
       description: "Design & Development",
       imgUrl: projImg3,
+      link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
     },
   ];
 
@@ -61,13 +64,13 @@ export const Projects = () => {
                   <Tab.Content className="pills-projects">
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {projects.map((project, index) => (
-                          <ProjectsCard key={index} {...project} />
+                        {projects.map((project, index, link) => (
+                          <ProjectsCard key={index} {...project} {...link} />
                         ))}
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second"></Tab.Pane>
-                    <Tab.Pane eventKey="third"></Tab.Pane>
+                    <Tab.Pane eventKey="second"><Row></Row></Tab.Pane>
+                    <Tab.Pane eventKey="third"><Row></Row></Tab.Pane>
                   </Tab.Content>
                 </Col>
               </Row>

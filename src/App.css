@@ -480,6 +480,15 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   letter-spacing: 0.8px;
 }
 
+.proj-txtx a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
 /* Contact Form */
 .contact {
   background-color: #121212;
