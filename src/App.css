@@ -309,8 +309,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  padding: 0 20px;
-  margin: 14px 0 75px 0;
+  padding: 0 350px;
+  margin: 14px auto 30px auto;
 }
 
 .skill-slider {
@@ -482,9 +482,9 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
 /* Contact Form */
 .contact {
-background-color: #ffffff40;
-padding-bottom: 30px;
-padding-top: 30px;
+  background-color: #ffffff40;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .contact-form {
@@ -671,7 +671,7 @@ padding-top: 30px;
 @media (max-width: 768px) {
   /* NavBar */
   nav.navbar {
-    padding: 18px 0;
+    padding: 18px 50px;
     position: fixed;
     width: 100%;
     transition: 0.32 ease-in-out;

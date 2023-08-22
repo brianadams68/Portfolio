@@ -6,6 +6,7 @@ import cssIcon from "../assets/images/css-icon.png";
 import reactIcon from "../assets/images/react-icon.png";
 import mongoIcon from "../assets/images/mongodb-icon.png";
 import jsIcon from "../assets/images/javascript-icon.png";
+import nodeIcon from "../assets/images/nodejs-icon.png";
 
 export const Skills = () => {
   const responsive = {
@@ -67,6 +68,10 @@ export const Skills = () => {
                 <div className="item">
                   <h5>MongoDB</h5>
                   <img src={mongoIcon} alt="" />
+                </div>
+                <div className="item">
+                  <h5>NodeJS</h5>
+                  <img src={nodeIcon} alt="" />
                 </div>
               </Carousel>
             </div>
