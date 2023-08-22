@@ -288,6 +288,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 .skill {
   padding: 100px 0 100px 0;
   position: relative;
+  background-color: #ccc;
 }
 
 .skill-bx {
@@ -480,6 +481,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 }
 
 /* Contact Form */
+.contact {
+background-color: #ffffff40;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+
 .contact-form {
   background-color: #f5f5f5;
   padding: 30px;

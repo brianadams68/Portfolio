@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
 import git_icon from "../assets/images/git-icon.png";
 import linkedl_icon from "../assets/images/linkedl-icon.png";
 
@@ -8,7 +7,6 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="aling-item-center">
-          <MailchimpForm />
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="https://github.com/brianadams68">
