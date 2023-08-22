@@ -286,9 +286,9 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
 /* Skills */
 .skill {
-  padding: 100px 0 100px 0;
+  padding: 170px 0 170px 0;
   position: relative;
-  background-color: #ccc;
+  background-color: #121212;
 }
 
 .skill-bx {
@@ -482,9 +482,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
 /* Contact Form */
 .contact {
-  background-color: #ffffff40;
+  background-color: #121212;
   padding-bottom: 30px;
   padding-top: 30px;
+  margin-bottom: 15px;
 }
 
 .contact-form {
@@ -749,9 +750,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 1.5em;
-    margin: 14px auto 20px auto;
+    margin: 0;
+    padding: 0 !important;
     text-align: center;
-    width: 80%;
+    width: 70%;
   }
 
   #pills-tab {
