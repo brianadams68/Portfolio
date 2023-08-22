@@ -95,6 +95,19 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.social-icon a img {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .social-icon a::before {
   content: "";
   width: 42px;
