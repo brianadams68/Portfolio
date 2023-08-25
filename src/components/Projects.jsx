@@ -43,7 +43,7 @@ export const Projects = () => {
               dynamic realm of technology.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Row>
+              <Row className="mobile-pills">
                 <Col>
                   <Nav
                     variant="pills"

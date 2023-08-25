@@ -29,12 +29,12 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar className={scrolled ? "scrolled" : ""}>
       <Container id="nav-container">
-        <Navbar.Brand href="#home" className="logo-container">
+        <Navbar.Brand href="#home">
           <img className="logo-img" src={logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar id="basic-navbar-nav">
           <Nav>
             <Nav.Link
               href="#home"
@@ -74,7 +74,7 @@ export const NavBar = () => {
               </a>
             </div>
           </span>
-        </Navbar.Collapse>
+        </Navbar>
       </Container>
     </Navbar>
   );

@@ -447,6 +447,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
 /* Footer */
 .footer {
+  display: flex;
   background-image: url("./assets/images/footerImg.jpg");
   background-position: center center;
   background-size: cover;
@@ -515,7 +516,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 @media (max-width: 768px) {
   /* NavBar */
   nav.navbar {
-    padding: 18px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
     position: fixed;
     width: 100%;
     transition: 0.32 ease-in-out;
@@ -540,9 +544,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     color: #fff !important;
   }
 
-  .logo-img {
-    display: none;
-  }
+ 
 
   .social-icon {
     display: none;
@@ -599,20 +601,20 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 1.5em;
-    margin: 0;
     padding: 0 !important;
     text-align: center;
     width: 70%;
   }
 
   #pills-tab {
-    width: 100%;
-    margin: 25px auto;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    margin: 0 !important;
+  }
+
+  .mobile-pills {
+    margin-right: 10px !important;
   }
 
   #pills-tab .nav-items {
@@ -621,19 +623,17 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
   #pills-tab .nav-link {
     background-color: transparent;
-    border-radius: 0;
-    padding: 12px 30px;
+    border-radius: 10;
+    padding: 10px 25px;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.5px;
-    position: relative;
     text-align: center;
     z-index: 0;
   }
 
   #pills-tab .nav-link::before {
     content: "";
-    position: absolute;
     width: 0;
     height: 100%;
     background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
@@ -664,16 +664,17 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
   .nav-link#projects-tabs-tab-first {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px 10px 0 0;
+    overflow: hidden;
   }
 
   .nav-link#projects-tabs-tab-second {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .nav-link#projects-tabs-tab-third {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0 0 10px 10px;
+    overflow: hidden;
   }
 
   .proj-imgbx {

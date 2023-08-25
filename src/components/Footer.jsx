@@ -6,8 +6,8 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="aling-item-center">
-          <Col sm={6} className="text-center text-sm-end">
+        <Row>
+          <Col className="text-center">
             <p>CopyRight 2023.</p>
             <div className="social-icon">
               <a href="https://github.com/brianadams68">
