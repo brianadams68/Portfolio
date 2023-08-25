@@ -50,7 +50,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={5} className="text-column">
+          <Col className="text-column">
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {`Hi, I'm Brian `} <span className="wrap">{text}</span>{" "}

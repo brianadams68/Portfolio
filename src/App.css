@@ -32,19 +32,10 @@ h6 {
   border-radius: 50%;
 }
 
-.nav-container {
+nav.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav.navbar {
   padding: 18px 0;
   height: 60px;
   position: fixed;
@@ -184,7 +175,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   --s: 400px;
   display: grid;
   border-radius: 50%;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .gallery > img {
@@ -257,7 +248,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
 /* Skills */
 .skill {
-  padding: 170px 0 170px 0;
+  padding: 180px 0 180px 0;
   position: relative;
   background-color: #121212;
   overflow: hidden;
@@ -281,8 +272,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  padding: 0 350px;
-  margin: 14px auto 30px auto;
+  padding: 0 300px;
+  margin: 14px auto 60px auto;
 }
 
 .skill-slider {
@@ -295,14 +286,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   width: 60px;
   height: 60px;
   margin: 0 auto 15px auto;
-}
-
-.background-image-left {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 
 /* Projects */
@@ -338,7 +321,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
 #pills-tab .nav-link {
@@ -405,7 +388,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   overflow: hidden;
   width: 400px;
   height: 400px;
-  margin-bottom: 24px;
+  margin-right: 35px;
+  margin-bottom: 44px;
 }
 
 .proj-imgbx::before {
