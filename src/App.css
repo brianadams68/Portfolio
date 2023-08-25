@@ -517,7 +517,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   }
 }
 
-/* Media query for phone screens */
+/* Media query for Phone (768px - 1024px) */
 @media (max-width: 768px) {
   /* NavBar */
   nav.navbar {
@@ -729,5 +729,96 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.5px;
+  }
+}
+
+/* Media query for tablet (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  nav.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    transition: 0.32 ease-in-out;
+  }
+
+  nav.navbar.scrolled {
+    padding: 18px 0;
+    background-color: #121212;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+  }
+
+  /* Banner */
+  .banner {
+    margin-top: 0;
+    padding: 200px 0 200px 0;
+  }
+
+  .banner h1 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .banner p {
+    color: #b8b8b8;
+    font-size: 18px;
+    letter-spacing: 0.8;
+    line-height: 1.5em;
+    margin-top: 30px;
+  }
+
+  #banner-flex {
+    display: flex !important;
+    align-content: center !important;
+    justify-content: center !important;
+    margin-top: 40px !important;
+  }
+
+  .gallery {
+    --g: 8px;
+    --s: 400px;
+    display: grid;
+    border-radius: 50%;
+  }
+
+  .gallery > img {
+    grid-area: 1/1;
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x, 0), var(--_y, 0));
+    cursor: pointer;
+    z-index: 0;
+    transition: 0.2s, z-index 0s 0.2s;
+  }
+
+  /* Skills */
+  .skill p {
+    width: 85%;
+    padding: 0;
+  }
+  /* Projects */
+  .project p {
+    width: 85%;
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  #pills-tab  {
+    margin: 0;
+    padding: 0;
+    width: 70%;
   }
 }
