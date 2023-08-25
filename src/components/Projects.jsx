@@ -44,10 +44,10 @@ export const Projects = () => {
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Row>
-                <Col sm={3}>
+                <Col>
                   <Nav
                     variant="pills"
-                    className="nav-pills mb-5 d-flex justify-content-center"
+                    className="nav-pills"
                     id="pills-tab"
                   >
                     <Nav.Item>
@@ -61,7 +61,7 @@ export const Projects = () => {
                     </Nav.Item>
                   </Nav>
                 </Col>
-                <Col sm={5}>
+                <Col>
                   <Tab.Content className="pills-projects">
                     <Tab.Pane eventKey="first">
                       <ProjectsCard {...projects[0]} />

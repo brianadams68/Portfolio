@@ -260,6 +260,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   padding: 170px 0 170px 0;
   position: relative;
   background-color: #121212;
+  overflow: hidden;
 }
 
 .skill-bx {
@@ -337,10 +338,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#pills-tab .nav-items {
-  width: 33.33333%;
+  margin-left: 40%;
 }
 
 #pills-tab .nav-link {
@@ -387,6 +385,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
+  overflow: hidden;
 }
 
 .nav-link#projects-tabs-tab-second {
@@ -397,6 +396,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0px 55px 55px 0px;
+  overflow: hidden;
 }
 
 .proj-imgbx {
@@ -553,10 +553,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   nav.navbar .navbar-nav .nav-link.navbar-link {
     top: 60px;
     width: 100%;
-  }
-
-  nav.navbar button {
-    display: none;
+    color: #fff !important;
   }
 
   .logo-img {
@@ -587,6 +584,15 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     width: 85%;
     margin-left: 30px;
     margin-top: 30px;
+  }
+
+  /* Skill */
+  .skill {
+    overflow: hidden;
+  }
+
+  .skill p {
+    padding: 0;
   }
 
   /* Projects */
@@ -730,10 +736,5 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.5px;
-  }
-
-  /* Contact Form */
-  .contact-form {
-    padding-left: 10px;
   }
 }
