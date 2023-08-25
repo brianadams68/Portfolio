@@ -8,6 +8,7 @@ export const Footer = () => {
       <Container>
         <Row className="aling-item-center">
           <Col sm={6} className="text-center text-sm-end">
+            <p>CopyRight 2023.</p>
             <div className="social-icon">
               <a href="https://github.com/brianadams68">
                 <img src={git_icon} alt="" />
@@ -16,7 +17,6 @@ export const Footer = () => {
                 <img src={linkedl_icon} alt="" />
               </a>
             </div>
-            <p>CopyRight 2023.</p>
           </Col>
         </Row>
       </Container>

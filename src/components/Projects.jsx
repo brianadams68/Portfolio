@@ -4,6 +4,7 @@ import { ProjectsCard } from "./ProjectsCard";
 import projImg1 from "../assets/images/projImg1.png";
 import projImg2 from "../assets/images/projImg2.png";
 import projImg3 from "../assets/images/projImg3.png";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Projects = () => {
   const projects = [
@@ -50,27 +51,27 @@ export const Projects = () => {
                     id="pills-tab"
                   >
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab One</Nav.Link>
+                      <Nav.Link eventKey="first">First Project</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab Second</Nav.Link>
+                      <Nav.Link eventKey="second">Second Project</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                      <Nav.Link eventKey="third">Third Project</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
                 <Col sm={5}>
                   <Tab.Content className="pills-projects">
                     <Tab.Pane eventKey="first">
-                      <Row>
-                        {projects.map((project, index, link) => (
-                          <ProjectsCard key={index} {...project} {...link} />
-                        ))}
-                      </Row>
+                      <ProjectsCard {...projects[0]} />
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second"><Row></Row></Tab.Pane>
-                    <Tab.Pane eventKey="third"><Row></Row></Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <ProjectsCard {...projects[1]} />
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                      <ProjectsCard {...projects[2]} />
+                    </Tab.Pane>
                   </Tab.Content>
                 </Col>
               </Row>

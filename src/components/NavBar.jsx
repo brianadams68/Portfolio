@@ -30,8 +30,8 @@ export const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container className="nav-container">
-        <Navbar.Brand href="#home">
+      <Container id="nav-container">
+        <Navbar.Brand href="#home" className="logo-container">
           <img className="logo-img" src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -64,7 +64,7 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
           </Nav>
-          <span className="navbar-text right-content">
+          <span className="navbar-text">
             <div className="social-icon">
               <a href="https://github.com/brianadams68">
                 <img src={git_icon} alt="Git icon" />
@@ -73,11 +73,6 @@ export const NavBar = () => {
                 <img src={linkedl_icon} alt="Linkedln icon" />
               </a>
             </div>
-            <a href="#connect">
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
-            </a>
           </span>
         </Navbar.Collapse>
       </Container>
