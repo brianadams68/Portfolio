@@ -83,7 +83,7 @@ export const Projects = () => {
                   </Nav>
                 </Col>
                 <Col>
-                  <Tab.Content className="pills-projects">
+                  <Tab.Content id="pills-projects">
                     <Tab.Pane eventKey="first">
                       <ProjectsCard {...projects[0]} />
                       <ProjectsCard {...projects[1]} />

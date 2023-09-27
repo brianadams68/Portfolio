@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 export const ProjectsCard = ({ title, description, imgUrl, link }) => {
   return (
-    <Col sm={6} md={4}>
+    <Col  sm={6} md={4}>
       <div className="proj-imgbx">
         <img src={imgUrl} alt="" />
         <div className="proj-txtx">
