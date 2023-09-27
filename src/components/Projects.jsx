@@ -4,6 +4,9 @@ import { ProjectsCard } from "./ProjectsCard";
 import projImg1 from "../assets/images/projImg1.png";
 import projImg2 from "../assets/images/projImg2.png";
 import projImg3 from "../assets/images/projImg3.png";
+import projImg4 from "../assets/images/calculator.png"
+import projImg5 from "../assets/images/quiz.png"
+import projImg6 from "../assets/images/hangman.png"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Projects = () => {
@@ -25,6 +28,24 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg3,
       link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
+    },
+    {
+      title: "Calculator",
+      description: "Design & Development",
+      imgUrl: projImg4,
+      link: "https://maino-calculator.netlify.app/",
+    },
+    {
+      title: "Quiz",
+      description: "Design & Development",
+      imgUrl: projImg5,
+      link: "https://maino-quiz.netlify.app/",
+    },
+    {
+      title: "Hangman",
+      description: "Design & Development",
+      imgUrl: projImg6,
+      link: "https://maino-hangman.netlify.app/",
     },
   ];
 
@@ -51,13 +72,13 @@ export const Projects = () => {
                     id="pills-tab"
                   >
                     <Nav.Item>
-                      <Nav.Link eventKey="first">First Project</Nav.Link>
+                      <Nav.Link eventKey="first">Course Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Second Project</Nav.Link>
+                      <Nav.Link eventKey="second">Project Ideas</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Third Project</Nav.Link>
+                      <Nav.Link eventKey="third">100 days of code</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Col>
@@ -65,12 +86,15 @@ export const Projects = () => {
                   <Tab.Content className="pills-projects">
                     <Tab.Pane eventKey="first">
                       <ProjectsCard {...projects[0]} />
+                      <ProjectsCard {...projects[1]} />
+                      <ProjectsCard {...projects[2]} />
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <ProjectsCard {...projects[1]} />
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <ProjectsCard {...projects[2]} />
+                      <ProjectsCard {...projects[3]} />
+                      <ProjectsCard {...projects[4]} />
+                      <ProjectsCard {...projects[5]} />
                     </Tab.Pane>
                   </Tab.Content>
                 </Col>

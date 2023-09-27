@@ -383,18 +383,20 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 }
 
 .proj-imgbx {
+  display: flex;
+  justify-content: center;
   position: relative;
   border-radius: 30%;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
   margin-right: 35px;
   margin-bottom: 44px;
 }
 
 .proj-imgbx img {
-  width: 420px;
-  height: 400px;
+  width: 320px;
+  height: 300px;
 }
 
 .proj-imgbx::before {
@@ -754,9 +756,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   nav.navbar.scrolled {
     padding: 18px 0;
     background-color: #121212;
-  }
-
-  nav.navbar .navbar-nav .nav-link.navbar-link {
   }
 
   /* Banner */
