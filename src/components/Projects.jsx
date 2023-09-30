@@ -4,9 +4,11 @@ import { ProjectsCard } from "./ProjectsCard";
 import projImg1 from "../assets/images/projImg1.png";
 import projImg2 from "../assets/images/projImg2.png";
 import projImg3 from "../assets/images/projImg3.png";
-import projImg4 from "../assets/images/calculator.png"
-import projImg5 from "../assets/images/quiz.png"
-import projImg6 from "../assets/images/hangman.png"
+import projImg4 from "../assets/images/calculator.png";
+import projImg5 from "../assets/images/quiz.png";
+import projImg6 from "../assets/images/hangman.png";
+import projImg7 from "../assets/images/weather.png";
+import projImg8 from "../assets/images/tic-tac-toe.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Projects = () => {
@@ -28,6 +30,18 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg3,
       link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
+    },
+    {
+      title: "Weather App",
+      description: "Design & Development",
+      imgUrl: projImg7,
+      link: "",
+    },
+    {
+      title: "Tic-Tac-Toe Game",
+      description: "Design & Development",
+      imgUrl: projImg8,
+      link: "",
     },
     {
       title: "Calculator",
@@ -66,11 +80,7 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Row className="mobile-pills">
                 <Col>
-                  <Nav
-                    variant="pills"
-                    className="nav-pills"
-                    id="pills-tab"
-                  >
+                  <Nav variant="pills" className="nav-pills" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Course Projects</Nav.Link>
                     </Nav.Item>
@@ -85,16 +95,25 @@ export const Projects = () => {
                 <Col>
                   <Tab.Content id="pills-projects">
                     <Tab.Pane eventKey="first">
-                      <ProjectsCard {...projects[0]} />
-                      <ProjectsCard {...projects[1]} />
-                      <ProjectsCard {...projects[2]} />
+                      <div style={{display: "flex", flexWrap: "nowrap"}}>
+                        {projects.slice(0, 3).map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
+                      <div style={{display: "flex", flexWrap: "nowrap"}}>
+                        {projects.slice(3, 5).map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <ProjectsCard {...projects[3]} />
-                      <ProjectsCard {...projects[4]} />
-                      <ProjectsCard {...projects[5]} />
+                      <div style={{display: "flex", flexWrap: "nowrap"}}>
+                        {projects.slice(5, 8).map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </div>
                     </Tab.Pane>
                   </Tab.Content>
                 </Col>

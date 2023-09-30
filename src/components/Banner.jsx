@@ -65,7 +65,7 @@ export const Banner = () => {
               Node.js, Express.js, MongoDB, Mongoose, Git, GitHub, and REST API
               integration.
             </p>
-            <Col xs={12} md={6} xl={5} className="gallery">
+            <Col className="gallery">
               <img src={headerImg} alt="" />
               <img src={headerImg2} alt="" />
               <img src={headerImg3} alt="" />
