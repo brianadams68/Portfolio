@@ -657,7 +657,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
   }
 
-  .pills-projects {
+  #pills-projects {
     display: flex;
     justify-content: center;
     align-items: center;
