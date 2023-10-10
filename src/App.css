@@ -661,12 +661,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
-
-  .proj-imgbx:hover .proj-txtx {
-    top: 50%;
-    opacity: 1;
   }
 
   .nav-link#projects-tabs-tab-first {
@@ -689,13 +683,14 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
     border-radius: 15px;
     overflow: hidden;
     width: 100%;
-    max-width: 300px;
+    max-width: 110px;
+    max-height: 110px;
     margin-bottom: 16px;
   }
 
   .proj-imgbx img {
-    max-width: 300px;
-    height: 400px;
+    max-width: 100px;
+    height: 100px;
   }
 
   .proj-imgbx::before {
@@ -714,25 +709,32 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
 
   .proj-txtx {
     text-align: center;
-    margin-top: 15px;
     transition: 0.5s ease-in-out;
     opacity: 1;
+    top: 200%;
     width: 100%;
   }
 
   .proj-txtx h4 {
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 700;
+    margin-top: 30px;
     letter-spacing: 0.5px;
     line-height: 1.1em;
-    margin-bottom: 8px;
   }
 
   .proj-txtx span {
     font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 0.2px;
+  }
+
+  .proj-txtx p span {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 8px;
+    letter-spacing: 0.3px;
   }
 }
 
