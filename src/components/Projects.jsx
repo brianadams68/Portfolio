@@ -32,16 +32,16 @@ export const Projects = () => {
       link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
     },
     {
-      title: "Weather App",
-      description: "Design & Development",
-      imgUrl: projImg7,
-      link: "",
-    },
-    {
       title: "Tic-Tac-Toe Game",
       description: "Design & Development",
       imgUrl: projImg8,
       link: "",
+    },
+    {
+      title: "Weather App",
+      description: "Design & Development",
+      imgUrl: projImg7,
+      link: "https://maino-weather.netlify.app/",
     },
     {
       title: "Calculator",
@@ -103,14 +103,14 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div style={{display: "flex", flexWrap: "nowrap"}}>
-                        {projects.slice(3, 5).map((project, index) => (
+                        {projects.slice(3, 4).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div style={{display: "flex", flexWrap: "nowrap"}}>
-                        {projects.slice(5, 8).map((project, index) => (
+                        {projects.slice(4, 8).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
