@@ -9,6 +9,9 @@ import projImg5 from "../assets/images/quiz.png";
 import projImg6 from "../assets/images/hangman.png";
 import projImg7 from "../assets/images/weather.png";
 import projImg8 from "../assets/images/tic-tac-toe.png";
+import projImg9 from "../assets/images/projImg9.png";
+import projImg10 from "../assets/images/projImg10.png";
+import projImg11 from "../assets/images/projImg11.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Projects = () => {
@@ -32,10 +35,28 @@ export const Projects = () => {
       link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
     },
     {
+      title: "Recipe Finder",
+      description: "Design & Development",
+      imgUrl: projImg9,
+      link: "",
+    },
+    {
+      title: "Password Generator",
+      description: "Design & Development",
+      imgUrl: projImg10,
+      link: "",
+    },
+    {
+      title: "Currency Converter",
+      description: "Design & Development",
+      imgUrl: projImg11,
+      link: "",
+    },
+    {
       title: "Tic-Tac-Toe Game",
       description: "Design & Development",
       imgUrl: projImg8,
-      link: "",
+      link: "https://maino-tic-tac-toe.netlify.app/",
     },
     {
       title: "Weather App",
@@ -103,14 +124,19 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div style={{display: "flex", flexWrap: "nowrap"}}>
-                        {projects.slice(3, 4).map((project, index) => (
+                        {projects.slice(3, 6).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div style={{display: "flex", flexWrap: "nowrap"}}>
-                        {projects.slice(4, 8).map((project, index) => (
+                        {projects.slice(6, 9).map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </div>
+                      <div style={{display: "flex", flexWrap: "nowrap", marginLeft: "80px"}}>
+                        {projects.slice(9, 11).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
