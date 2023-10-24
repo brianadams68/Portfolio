@@ -41,12 +41,6 @@ export const Projects = () => {
       link: "",
     },
     {
-      title: "Password Generator",
-      description: "Design & Development",
-      imgUrl: projImg10,
-      link: "",
-    },
-    {
       title: "Currency Converter",
       description: "Design & Development",
       imgUrl: projImg11,
@@ -63,6 +57,12 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg7,
       link: "https://maino-weather.netlify.app/",
+    },
+    {
+      title: "Password Generator",
+      description: "Design & Development",
+      imgUrl: projImg10,
+      link: "https://maino-password.netlify.app/",
     },
     {
       title: "Calculator",
@@ -116,27 +116,27 @@ export const Projects = () => {
                 <Col>
                   <Tab.Content id="pills-projects">
                     <Tab.Pane eventKey="first">
-                      <div style={{display: "flex", flexWrap: "nowrap"}}>
+                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
                         {projects.slice(0, 3).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <div style={{display: "flex", flexWrap: "nowrap"}}>
-                        {projects.slice(3, 6).map((project, index) => (
+                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
+                        {projects.slice(3, 5).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <div style={{display: "flex", flexWrap: "nowrap"}}>
-                        {projects.slice(6, 9).map((project, index) => (
+                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
+                        {projects.slice(5, 8).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
-                      <div style={{display: "flex", flexWrap: "nowrap", marginLeft: "80px"}}>
-                        {projects.slice(9, 11).map((project, index) => (
+                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
+                        {projects.slice(8, 11).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
