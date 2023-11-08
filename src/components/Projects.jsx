@@ -44,7 +44,7 @@ export const Projects = () => {
       title: "Currency Converter",
       description: "Design & Development",
       imgUrl: projImg11,
-      link: "",
+      link: "https://maino-currency.netlify.app",
     },
     {
       title: "Tic-Tac-Toe Game",
@@ -124,7 +124,7 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div style={{ display: "flex", flexWrap: "nowrap" }}>
-                        {projects.slice(3, 5).map((project, index) => (
+                        {projects.slice(3, 4).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
@@ -137,6 +137,11 @@ export const Projects = () => {
                       </div>
                       <div style={{ display: "flex", flexWrap: "nowrap" }}>
                         {projects.slice(8, 11).map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </div>
+                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
+                        {projects.slice(4, 5).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
