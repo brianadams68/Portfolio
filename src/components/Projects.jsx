@@ -12,6 +12,7 @@ import projImg8 from "../assets/images/tic-tac-toe.png";
 import projImg9 from "../assets/images/projImg9.png";
 import projImg10 from "../assets/images/projImg10.png";
 import projImg11 from "../assets/images/projImg11.png";
+import projImg12 from "../assets/images/sudoku.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Projects = () => {
@@ -35,10 +36,22 @@ export const Projects = () => {
       link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
     },
     {
+      title: "Sudoku",
+      description: "Design & Development",
+      imgUrl: projImg12,
+      link: "",
+    },
+    {
       title: "Recipe Finder",
       description: "Design & Development",
       imgUrl: projImg9,
       link: "",
+    },
+    {
+      title: "Recipe Finder",
+      description: "Design & Development",
+      imgUrl: projImg9,
+      link: "https://maino-recipe.netlify.app/",
     },
     {
       title: "Currency Converter",
@@ -124,7 +137,7 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div style={{ display: "flex", flexWrap: "nowrap" }}>
-                        {projects.slice(3, 4).map((project, index) => (
+                        {projects.slice(3, 5).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
@@ -141,7 +154,7 @@ export const Projects = () => {
                         ))}
                       </div>
                       <div style={{ display: "flex", flexWrap: "nowrap" }}>
-                        {projects.slice(4, 5).map((project, index) => (
+                        {projects.slice(11, 13).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
