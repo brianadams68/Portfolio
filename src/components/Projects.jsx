@@ -12,7 +12,8 @@ import projImg8 from "../assets/images/tic-tac-toe.png";
 import projImg9 from "../assets/images/projImg9.png";
 import projImg10 from "../assets/images/projImg10.png";
 import projImg11 from "../assets/images/projImg11.png";
-import projImg12 from "../assets/images/sudoku.png";
+import projImg12 from "../assets/images/accounting.png";
+import projImg13 from "../assets/images/git-icon.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Projects = () => {
@@ -36,15 +37,15 @@ export const Projects = () => {
       link: "https://fanciful-mooncake-5f4f8c.netlify.app/",
     },
     {
-      title: "Sudoku",
+      title: "Expense Tracker",
       description: "Design & Development",
       imgUrl: projImg12,
       link: "",
     },
     {
-      title: "Recipe Finder",
+      title: "GitHub Profile Viewer",
       description: "Design & Development",
-      imgUrl: projImg9,
+      imgUrl: projImg13,
       link: "",
     },
     {
