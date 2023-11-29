@@ -40,7 +40,7 @@ export const Projects = () => {
       title: "Expense Tracker",
       description: "Design & Development",
       imgUrl: projImg12,
-      link: "",
+      link: "https://maino-tracker.netlify.app/",
     },
     {
       title: "GitHub Profile Viewer",
@@ -136,13 +136,7 @@ export const Projects = () => {
                         ))}
                       </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
-                        {projects.slice(3, 4).map((project, index) => (
-                          <ProjectsCard key={index} {...project} />
-                        ))}
-                      </div>
-                    </Tab.Pane>
+                    <Tab.Pane eventKey="second"></Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div style={{ display: "flex", flexWrap: "nowrap" }}>
                         {projects.slice(4, 7).map((project, index) => (
@@ -156,6 +150,11 @@ export const Projects = () => {
                       </div>
                       <div style={{ display: "flex", flexWrap: "nowrap" }}>
                         {projects.slice(10, 13).map((project, index) => (
+                          <ProjectsCard key={index} {...project} />
+                        ))}
+                      </div>
+                      <div style={{ display: "flex", flexWrap: "nowrap" }}>
+                        {projects.slice(3, 4).map((project, index) => (
                           <ProjectsCard key={index} {...project} />
                         ))}
                       </div>
